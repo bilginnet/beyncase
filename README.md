@@ -12,9 +12,13 @@ Mail ile iletmiş olduğunuz case projesinin dosyaları ve endpointleri bu dök�
 
 ## Kurulum
 
+.env.example dosyası .env olarak kopyalandıktan sonra .env dosyası üzerinde
+veritabanı ayarları yapılması gerekmektedir.
+
 ```sh
 git clone https://github.com/bilginnet/beyncase.git
 cd beyncase
+cp .env.example .env
 composer install
 php artisan migrate
 php artisan db:seed
